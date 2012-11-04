@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.10 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.11 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -2336,7 +2336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="picshow" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
-    <eLabel text="PicturePlayer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <!--<eLabel text="PicturePlayer" position="85,32" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" /> -->
     <widget name="thn" position="242,365" size="260,250" alphatest="on" />
     <widget name="filelist" position="590,110" size="670,448" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" />
     <widget name="label" position="522,590" size="260,25" transparent="1" font="Regular;20" />
