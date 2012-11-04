@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.13 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.14 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -659,7 +659,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-Night/window/progress.png" position="115,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="45,420" size="435,210" foregroundColor="grey" transparent="1" font="Regular; 20">
+    <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="ServiceEvent" render="NextEpgInfo" position="45,645" size="425,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
@@ -709,7 +709,7 @@
     <widget source="Event" render="Label" position="45,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="45,420" size="435,210" foregroundColor="grey" transparent="1" font="Regular; 20">
+    <widget source="Event" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="45,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
@@ -729,7 +729,7 @@
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="540,110" size="670,500" foregroundColor="grey" transparent="1" font="Regular;22" />
+    <widget name="epg_description" position="540,110" size="730,555" foregroundColor="grey" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -756,7 +756,7 @@
     <panel name="KeyMenuInfoTemplate"/>
     <widget name="date" position="530,90" size="740,24" transparent="1" font="Regular;20" valign="center" halign="center" />
     <widget name="list" position="530,168" size="740,488" font="Regular;20" itemHeight="27" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" />
-    <widget source="Event" render="Label" position="45,370" size="430,303" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="20,370" size="490,303" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="now_button" pixmap="PLi-HD-Night/border/epg_off.png" position="570,115" zPosition="2" size="180,40" alphatest="blend" />
@@ -1034,7 +1034,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="45,173" size="460,240" transparent="1" foregroundColor="grey" font="Regular; 20">
+    <widget source="session.Event_Now" render="Label" position="20,173" size="490,240" transparent="1" foregroundColor="grey" font="Regular; 20">
     <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -1109,22 +1109,22 @@
     <widget source="Service" render="Label" position="45,394" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="45,444" size="425,172" font="Regular;21" foregroundColor="grey" valign="center">
+    <widget source="Service" render="Label" position="20,444" size="490,172" font="Regular;21" foregroundColor="grey" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="45,366" size="80,24" foregroundColor="grey" font="Regular;20" halign="left" transparent="1">
+    <widget source="Service" render="Label" position="45,366" size="80,24" foregroundColor="white" font="Regular;20" halign="left" transparent="1">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="125,366" size="90,25" font="Regular;20" foregroundColor="grey" halign="center"  transparent="1">
+    <widget source="Service" render="Label" position="125,366" size="90,25" font="Regular;20" foregroundColor="white" halign="center"  transparent="1">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Service" render="Label" position="45,645" size="120,25" transparent="1" foregroundColor="grey" font="Regular;20">
+    <widget source="Service" render="Label" position="45,645" size="120,25" transparent="1" foregroundColor="white" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="135,645" size="325,25" foregroundColor="grey" font="Regular;20" transparent="1" halign="right"/>
-    <widget source="Service" render="Label" position="215,366" size="245,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
+    <widget name="freeDiskSpace" position="135,645" size="325,25" foregroundColor="white" font="Regular;20" transparent="1" halign="right"/>
+    <widget source="Service" render="Label" position="215,366" size="245,25" zPosition="1" foregroundColor="white" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
     <widget name="movie_sort" pixmaps="PLi-HD-Night/icons/az.png,PLi-HD-Night/icons/newtop.png,PLi-HD-Night/icons/shuffle.png,PLi-HD-Night/icons/za.png,PLi-HD-Night/icons/oldtop.png,PLi-HD-Night/icons/faz.png,PLi-HD-Night/icons/fza.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
