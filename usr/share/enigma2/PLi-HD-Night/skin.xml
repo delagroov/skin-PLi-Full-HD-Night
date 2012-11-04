@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.11 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.12 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -119,7 +119,7 @@
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="background" />
     <ePixmap pixmap="PLi-HD-Night/border/smallshadowline.png" position="0,85" size="1280,2" zPosition="2"/>
-    <widget source="Title" render="Label" position="85,32" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="Title" render="Label" position="85,30" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1100,24" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -157,7 +157,7 @@
 
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
-    <widget source="title" render="Label" position="85,32" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="title" render="Label" position="85,30" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="menu" render="Listbox" position="590,110" size="670,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (45,9),size = (535,30),flags = RT_HALIGN_LEFT,text = 0) ],
@@ -1668,7 +1668,7 @@
   <screen name="UserManager" title="UserManager" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_RYS"/>
-    <widget source="config" render="Listbox" position="590,110" size="670,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
+    <widget source="config" render="Listbox" position="590,110" size="670,420" zPosition="3" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80,4),size = (590,50),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
@@ -1958,7 +1958,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="NimSelection" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Choose Tuner" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget source="nimlist" render="Listbox" position="530,110" size="740,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" >
+    <widget source="nimlist" render="Listbox" position="530,110" size="740,500" scrollbarMode="showOnDemand" >
 	  <convert type="TemplatedMultiContent">
 	    {"template": [
 		    MultiContentEntryText(pos = (10, 3), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -2336,7 +2336,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="picshow" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4S"/>
-    <!--<eLabel text="PicturePlayer" position="85,32" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" /> -->
+    <eLabel text="PicturePlayer" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="thn" position="242,365" size="260,250" alphatest="on" />
     <widget name="filelist" position="590,110" size="670,448" itemHeight="28" zPosition="3" scrollbarMode="showOnDemand" />
     <widget name="label" position="522,590" size="260,25" transparent="1" font="Regular;20" />
@@ -3061,7 +3061,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="Virtual Keyboard" position="1010,682" size="300,26" backgroundColor="background" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="HelpWindow" position="65,500" size="1,1" transparent="1" zPosition="3" alphatest="on" />
     <widget name="config" position="520,110" size="740,25" scrollbarMode="showNever" transparent="1" zPosition="2" />
-    <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" position="520,135" size="740,480" source="feedlist" transparent="1" zPosition="1">
+    <widget render="Listbox" scrollbarMode="showOnDemand" position="520,135" size="740,480" source="feedlist" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (80,[
@@ -3099,7 +3099,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="ButtonTemplate_1"/>
     <widget alphatest="on" name="thumbnail" position="0,0" size="130,98" />
     <widget font="Regular;20" foregroundColor="foreground" halign="left" name="title" position="520,100" size="670,50" transparent="1" valign="center" zPosition="5" />
-    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionPixmap="PLi-HD-Night/buttons/sel2.png" selectionDisabled="1" size="520,106" source="infolist" transparent="1" zPosition="6">
+    <widget position="605,500" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" size="520,106" source="infolist" transparent="1" zPosition="6">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (106,[
@@ -3551,7 +3551,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen name="ForecaMlistTemplate">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" font="Regular;20" position="80,110" size="1100,426" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="80,110" size="1100,426" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="ForecaPreview" position="fill" title="Forecast">
@@ -3560,12 +3560,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="KeyMenuInfoTemplate"/>
     <widget source="Titel2" render="Label" position="80,110" zPosition="3" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
     <widget source="Titel3" render="Label" position="80,110" zPosition="2" size="300,100" font="Regular;25" valign="center" halign="left" transparent="1" foregroundColor="unffffff" />
-    <widget name="MainList" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" font="Regular;20" position="380,110" size="820,450" transparent="1" />
+    <widget name="MainList" scrollbarMode="showOnDemand" font="Regular;20" position="380,110" size="820,450" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="CityPanel" position="fill" title="CityPanel">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
     <panel name="ButtonTemplate_GYBS"/>
   </screen>
 
@@ -3581,7 +3581,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen flags="wfNoBorder" name="SatPanelc" position="fill" title="Continenten">
     <panel name="ForecaTemplate"/>
-    <widget name="Mlist" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD-Night/buttons/sel2.png" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
+    <widget name="Mlist" scrollbarMode="showOnDemand" font="Regular;20" position="80,110" size="1120,510" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="SatPaneld" position="fill" title="Europa">
