@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.14 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.15 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -702,8 +702,8 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" font="Regular; 22" itemHeight="28" transparent="1"  scrollbarMode="showOnDemand"  />
-    <widget source="Service" render="Label" position="375,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="right">
+    <widget name="list" position="530,105" size="740,560" font="Regular; 22" itemHeight="28" transparent="1" scrollbarMode="showOnDemand"  />
+    <widget source="Service" render="Label" position="85,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="45,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
@@ -893,7 +893,7 @@
     <panel name="ButtonTemplate_2S"/>
     <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="530,110" size="740,500" enableWrapAround="1" scrollbarMode="showOnDemand" />
-    <widget name="description" position="45,380" size="417,200" font="Regular;20" valign="top" />
+    <widget name="description" position="45,380" size="417,200" font="Regular;20" foregroundColor="grey" valign="top" />
   </screen>
 
   <!-- Scan setup -->
