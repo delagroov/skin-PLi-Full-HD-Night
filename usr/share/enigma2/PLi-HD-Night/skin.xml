@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.15 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.16 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -54,6 +54,7 @@
     <color name="white" value="#00f0f0f0"></color>
     <color name="yellow" value="#00ffc000"></color>
     <color name="yellowtransparent" value="#084b4b00"></color>
+	<color name="yellowsoft" value="#CCAC68"></color>
   </colors>
 
   <!-- Window -->
@@ -641,7 +642,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorServiceDescription="#CCAC68" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" />
+    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorServiceDescription="yellowsoft" backgroundColor="noTransBG" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" />
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
@@ -729,7 +730,7 @@
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="540,110" size="730,555" foregroundColor="grey" transparent="1" font="Regular;22" />
+    <widget name="epg_description" position="530,105" size="740,560" foregroundColor="grey" transparent="1" font="Regular;22" />
     <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -747,7 +748,7 @@
 
   <screen name="EventViewContextMenu" position="fill" title="Eventview menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" position="530,110" size="740,500" transparent="1" />
+    <widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="530,105" size="740,560" transparent="1" />
   </screen>
 
   <screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
