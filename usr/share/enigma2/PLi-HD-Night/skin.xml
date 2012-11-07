@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.19 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.20 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -1824,10 +1824,10 @@
   
   <!-- Device Manager setup -->
 
-  <screen name="HddSetup" position="fill" title="" flags="wfNoBorder" >
+  <screen name="HddSetup" position="fill" title="" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <panel name="KeyMenuInfoTemplate"/>
+    <panel name="KeyMenuTemplate"/>
 		<widget source="menu" render="Listbox" position="530,105" size="740,560" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1842,9 +1842,9 @@
 		</widget>
   </screen>
   
-  <screen name="HddFastRemove" position="fill" title="" flags="wfNoBorder" >
+  <screen name="HddFastRemove" position="fill" title="" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="KeyMenuInfoTemplate"/>
+    <panel name="KeyMenuTemplate"/>
     <ePixmap pixmap="PLi-HD-Night/buttons/red.png" position="145,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="PLi-HD-Night/buttons/blue.png" position="970,682" size="26,26" alphatest="on" />
     <widget name="key_red" position="185,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
@@ -1862,6 +1862,52 @@
 			</convert>
 		</widget>
   </screen>
+  
+  <screen name="HddInfo" position="fill" title="" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+		<widget font="Regular;20" halign="left" name="model" position="530,105" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="serial" position="530,135" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="firmware" position="530,165" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="cylinders" position="530,195" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="heads" position="530,225" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="sectors" position="530,255" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="readDisk" position="530,285" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="readCache" position="530,315" size="740,25" valign="center" />
+		<widget font="Regular;20" halign="left" name="temp" position="530,345" size="740,25" valign="center" />
+		<widget name="config" position="530,375" scrollbarMode="showOnDemand" size="740,30" />
+  </screen>
+  
+  <screen name="HddMount" position="fill" title="" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+	<panel name="KeyMenuTemplate"/>
+	<widget name="menu" position="530,105" scrollbarMode="showOnDemand" size="740,560" transparent="1" />
+  </screen>
+  
+  <screen name="HddPartitions" position="fill" title="" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+	<widget name="label_disk" position="530,105" font="Regular;20" halign="center" size="740,25" valign="center" />
+	<widget source="menu" render="Listbox" position="530,130" size="740,560" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (405, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 18)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+  </screen>
+  
+  <!--<screen name="ExtraActionBox" position="fill" title="" flags="wfNoBorder">  Still dont know what this screen does!!!
+    <panel name="PigTemplate"/>
+	<widget alphatest="on" name="logo" position="530,105" size="48,48" transparent="1" zPosition="2"/>
+	<widget font="Regular;20" halign="center" name="message" position="530,105" size="538,48" valign="center" />
+  </screen>-->
 
   <!-- Help -->
 
