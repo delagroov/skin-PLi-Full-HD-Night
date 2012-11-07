@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.16 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.17 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -642,11 +642,11 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorServiceDescription="yellowsoft" backgroundColor="noTransBG" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" />
+    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" backgroundColor="background" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" />
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="45,360" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="ServiceEvent" render="Label" position="20,360" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;21" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="45,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -663,7 +663,7 @@
     <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="45,645" size="425,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="425,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;21"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -674,7 +674,7 @@
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="85,05" size="250,28" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget name="list" scrollbarMode="showOnDemand" font="Regular;22" position="15,34" size="570,340" transparent="1" />
+    <widget name="list" scrollbarMode="showOnDemand" font="Regular;21" position="15,34" size="570,340" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="15,400" size="570,65" font="Regular; 19" backgroundColor="background" foregroundColor="foreground" zPosition="2" transparent="1">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -704,20 +704,20 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
     <widget name="list" position="530,105" size="740,560" font="Regular; 22" itemHeight="28" transparent="1" scrollbarMode="showOnDemand"  />
-    <widget source="Service" render="Label" position="85,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;22" valign="center" halign="left">
+    <widget source="Service" render="Label" position="85,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;21" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="45,360" size="435,50" foregroundColor="secondFG" font="Regular;22" transparent="1">
+    <widget source="Event" render="Label" position="20,360" size="435,50" foregroundColor="secondFG" font="Regular;21" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="45,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <widget source="Event" render="Label" position="20,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="265,645" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <widget source="Event" render="Label" position="240,645" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21" halign="right">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -727,28 +727,28 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuTemplate"/>
-    <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="530,105" size="740,560" foregroundColor="grey" transparent="1" font="Regular;22" />
-    <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;22" halign="right">
+    <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;21" halign="left" />
+    <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;21" halign="left" />
+    <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;21" halign="left" />
+    <widget name="epg_description" position="530,105" size="740,560" foregroundColor="grey" transparent="1" font="Regular;21" />
+    <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;21" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,515" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="85,515" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;21" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="85,555" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="85,555" size="450,30" transparent="1" zPosition="1" foregroundColor="blue" font="Regular;21" halign="left">
       <convert type="EventName">Rating</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="85,590" size="450,26" font="Regular;22" halign="left" foregroundColor="secondFG" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="85,590" size="450,26" font="Regular;21" halign="left" foregroundColor="secondFG" transparent="1">
       <convert type="EventName">NameNext</convert>
     </widget>
   </screen>
 
   <screen name="EventViewContextMenu" position="fill" title="Eventview menu" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="menu" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" position="530,105" size="740,560" transparent="1" />
+    <widget name="menu" scrollbarMode="showOnDemand" font="Regular;21" itemHeight="28" position="530,105" size="740,560" transparent="1" />
   </screen>
 
   <screen name="EPGSelectionMulti" title="EPG Selection" position="fill" flags="wfNoBorder">
