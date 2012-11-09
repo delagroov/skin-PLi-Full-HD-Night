@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.20 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.21 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -161,7 +161,7 @@
     <widget source="title" render="Label" position="85,30" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="menu" render="Listbox" position="590,110" size="680,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
-        {"template": [ MultiContentEntryText(pos = (45,9),size = (535,30),flags = RT_HALIGN_LEFT,text = 0) ],
+        {"template": [ MultiContentEntryText(pos = (45,9),size = (635,30),flags = RT_HALIGN_LEFT,text = 0) ],
 	  "fonts": [gFont("Regular",24)],
 	  "itemHeight": 45
 	}
@@ -2807,7 +2807,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="Rename" position="460,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <eLabel text="Move/Copy" position="735,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
     <eLabel text="Bookmarks" position="1010,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <widget name="filelist" position="530,110" size="740,494" scrollbarMode="showOnDemand" />
+    <widget name="filelist" position="530,105" size="740,560"  itemHeight="28" scrollbarMode="showOnDemand" />
   </screen>
 
   <screen name="vInputBox" position="fill" title="Input..." flags="wfNoBorder">
@@ -2853,7 +2853,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen name="PictureExplorerII" position="fill" title="Picture-Explorer" flags="wfNoBorder">
     <widget name="Picture" position="fill" zPosition="1" />
-    <widget name="State" position="0,650" size="1280,70"  font="Regular;20" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
+    <widget name="State" position="0,650" size="1280,70"  font="Regular;22" backgroundColor="secondBG" foregroundColor="#fcc000" halign="center" transparent="0" zPosition="9"/>
   </screen>
 
   <!--GP2 - Where is this used??? -->
