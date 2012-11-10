@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!-- Skin: PLi-HD-Night vs.21 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
+  <!-- Skin: PLi-HD-Night vs.22 based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-HD-Night by DelaGroov -->
   <!-- This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
@@ -135,7 +135,7 @@
   </screen>
 
   <screen name="TextTemplate">
-    <widget name="text" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget name="text" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
   </screen>
 
   <screen name="SelectionTemplate">
@@ -1273,7 +1273,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate2"/>
     <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="list" position="590,105" size="680,555" font="Regular;26" scrollbarMode="showOnDemand" />
+    <widget name="list" position="590,105" size="680,555" font="Regular;26" enableWrapAround="1" scrollbarMode="showOnDemand" />
   </screen>
 
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
@@ -1380,7 +1380,7 @@
     <widget source="package" render="Label" position="590,130" size="670,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="590,170" size="670,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="594,294" size="601,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="45,630" size="1110,6" pixmap="PLi-HD-Night/window/slider100.png" transparent="1" />
+    <widget name="activityslider" position="45,620" size="1110,6" pixmap="PLi-HD-Night/window/slider100.png" transparent="1" />
   </screen>
 
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" flags="wfNoBorder">
@@ -2799,7 +2799,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <!-- DreamboxExplorer -->
 
-  <screen name="DreamExplorerII" position="fill" title="" flags="wfNoBorder">
+  <screen name="DreamExplorerII" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
