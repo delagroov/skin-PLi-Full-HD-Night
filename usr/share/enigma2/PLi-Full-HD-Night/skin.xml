@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.29 -->
+  <!-- PLi-Full-HD-Night vs.30 -->
   
   <!-- Head -->
 
@@ -1108,11 +1108,11 @@
     </widget>
     <widget name="waitingtext" position="530,110" size="740,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="chosenletter" position="530,110" size="740,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
-    <widget name="list" position="530,110" size="740,535" scrollbarMode="showOnDemand" itemHeights="75,53,30" fontSizesOriginal="21,20,18" fontSizesCompact="21,18" fontSizesMinimal="21,20" />
-    <widget source="Service" render="Label" position="45,394" size="425,48" foregroundColor="secondFG" font="Regular;20" transparent="1">
+    <widget name="list" position="530,105" size="740,560" scrollbarMode="showOnDemand" itemHeights="75,53,28" fontSizesOriginal="21,20,18" fontSizesCompact="21,18" fontSizesMinimal="21,20" />
+    <widget source="Service" render="Label" position="20,394" size="490,48" foregroundColor="secondFG" font="Regular;20" halign="left"  transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="20,444" size="490,172" font="Regular;21" foregroundColor="grey" valign="center">
+    <widget source="Service" render="Label" position="20,444" size="490,182" font="Regular;20" foregroundColor="grey" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="45,366" size="80,24" foregroundColor="white" font="Regular;20" halign="left" transparent="1">
@@ -1123,15 +1123,15 @@
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Service" render="Label" position="45,645" size="120,25" transparent="1" foregroundColor="white" font="Regular;20">
+    <widget source="Service" render="Label" position="20,645" size="120,25" transparent="1" foregroundColor="white" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="135,645" size="325,25" foregroundColor="white" font="Regular;20" transparent="1" halign="right"/>
+    <widget name="freeDiskSpace" position="115,645" size="375,25" foregroundColor="white" font="Regular;20" transparent="1" halign="right"/>
     <widget source="Service" render="Label" position="215,366" size="245,25" zPosition="1" foregroundColor="white" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget name="movie_sort" pixmaps="PLi-Full-HD-Night/icons/az.png,PLi-Full-HD-Night/icons/newtop.png,PLi-Full-HD-Night/icons/shuffle.png,PLi-Full-HD-Night/icons/za.png,PLi-Full-HD-Night/icons/oldtop.png,PLi-Full-HD-Night/icons/faz.png,PLi-Full-HD-Night/icons/fza.png" position="830,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
-    <widget name="movie_off" pixmaps="PLi-Full-HD-Night/icons/ask.png,PLi-Full-HD-Night/icons/movielist.png,PLi-Full-HD-Night/icons/quit.png,PLi-Full-HD-Night/icons/pause.png,PLi-Full-HD-Night/icons/playlist.png,PLi-Full-HD-Night/icons/playlistquit.png,PLi-Full-HD-Night/icons/loop.png" position="865,92" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
+    <widget name="movie_sort" pixmaps="PLi-Full-HD-Night/icons/az.png,PLi-Full-HD-Night/icons/newtop.png,PLi-Full-HD-Night/icons/shuffle.png,PLi-Full-HD-Night/icons/za.png,PLi-Full-HD-Night/icons/oldtop.png,PLi-Full-HD-Night/icons/faz.png,PLi-Full-HD-Night/icons/fza.png" position="830,88" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
+    <widget name="movie_off" pixmaps="PLi-Full-HD-Night/icons/ask.png,PLi-Full-HD-Night/icons/movielist.png,PLi-Full-HD-Night/icons/quit.png,PLi-Full-HD-Night/icons/pause.png,PLi-Full-HD-Night/icons/playlist.png,PLi-Full-HD-Night/icons/playlistquit.png,PLi-Full-HD-Night/icons/loop.png" position="865,88" zPosition="1" size="35,20" transparent="1" alphatest="on"/>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
 
