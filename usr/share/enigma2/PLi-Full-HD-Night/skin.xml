@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.26 -->
+  <!-- PLi-Full-HD-Night vs.27 -->
   
   <!-- Head -->
 
@@ -3021,14 +3021,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="590,110" size="670,243" />
     <widget name="preview" position="45,380" size="500,300" zPosition="1" alphatest="blend"/>
     <widget name="previewo" position="550,380" size="670,300" zPosition="2" alphatest="blend"/>
-  </screen>
+  </screen>  
 
-  <!-- EPG Import Sources -->
+  <!-- EPG Import -->
 
-  <screen name="EPGImportSources" position="fill" title="Sources" flags="wfNoBorder">
+  <screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
-    <widget name="list" position="590,110" size="670,510" scrollbarMode="showOnDemand" />
+    <widget name="list" position="530,110" size="740,560" itemHeight="28" scrollbarMode="showOnDemand" />
+  </screen>
+
+  <screen name="Config" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="config" position="530,110" size="740,560" scrollbarMode="showOnDemand" />
+    <widget name="status" position="85,375" size="540,60" font="Regular;20" />
   </screen>
 
   <!-- HDMI-CEC Setup -->
