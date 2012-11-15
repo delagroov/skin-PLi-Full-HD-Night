@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.31 -->
+  <!-- PLi-Full-HD-Night vs.32 -->
   
   <!-- Head -->
 
@@ -54,7 +54,7 @@
     <color name="un4a00a0a" value="#04a00a0a"></color>
     <color name="uncccccc" value="#00cccccc"></color>
     <color name="white" value="#00f0f0f0"></color>
-    <color name="yellow" value="#00ffc000"></color>
+    <color name="yellow" value="#00ffc000"></color>   
     <color name="yellowtransparent" value="#084b4b00"></color>
 	<color name="yellowsoft" value="#CCAC68"></color>
   </colors>
@@ -648,7 +648,7 @@
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,360" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;21" halign="left">
+    <widget source="ServiceEvent" render="Label" position="20,360" size="435,42" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="45,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -662,10 +662,10 @@
     <widget source="ServiceEvent" render="Progress" pixmap="PLi-Full-HD-Night/window/progress.png" position="115,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
+    <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" backgroundColor="background" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="425,26" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;21"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="425,26" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
@@ -705,14 +705,14 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" font="Regular; 22" itemHeight="28" transparent="1" scrollbarMode="showOnDemand"  />
+    <widget name="list" position="530,105" size="740,560" font="Regular; 22" backgroundColor="background" itemHeight="28" transparent="1" scrollbarMode="showOnDemand"  />
     <widget source="Service" render="Label" position="85,30" size="435,55" zPosition="1" backgroundColor="secondBG" transparent="1" foregroundColor="white" font="Regular;24" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="Event" render="Label" position="20,360" size="435,50" foregroundColor="secondFG" font="Regular;21" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="20,420" size="490,210" foregroundColor="grey" transparent="1" font="Regular; 20">
+    <widget source="Event" render="Label" position="20,420" size="490,210" backgroundColor="background" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget source="Event" render="Label" position="20,645" size="220,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;21">
@@ -732,7 +732,7 @@
     <widget name="channel"  position="85,395" size="450,30" transparent="1" font="Regular;21" halign="left" />
     <widget name="datetime" position="85,435" size="450,30" transparent="1" font="Regular;21" halign="left" />
     <widget name="duration" position="85,475" size="450,30" transparent="1" font="Regular;21" halign="left" />
-    <widget name="epg_description" position="530,105" size="740,560" foregroundColor="grey" transparent="1" font="Regular;21" />
+    <widget name="epg_description" position="530,105" size="740,560" backgroundColor="background" foregroundColor="grey" transparent="1" font="Regular;21" />
     <widget source="session.Event_Now" render="Label" position="150,475" size="150,30" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;21" halign="right">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
@@ -895,8 +895,8 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
     <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
-    <widget name="config" position="530,110" size="740,500" enableWrapAround="1" scrollbarMode="showOnDemand" />
-    <widget name="description" position="45,380" size="417,200" font="Regular;20" foregroundColor="grey" valign="top" />
+    <widget name="config" position="530,110" size="740,500" backgroundColor="background" enableWrapAround="1" scrollbarMode="showOnDemand" />
+    <widget name="description" position="45,380" size="417,200" font="Regular;20" backgroundColor="background" foregroundColor="grey" valign="top" />
   </screen>
 
   <!-- Scan setup -->
@@ -1021,7 +1021,7 @@
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="list" scrollbarMode="showOnDemand" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="670,305" transparent="1">
+    <widget name="list" scrollbarMode="showOnDemand" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" backgroundColor="background" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="670,305" transparent="1">
 	</widget>
     <widget source="session.Event_Now" render="Label" position="45,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
@@ -1037,7 +1037,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="20,173" size="490,240" transparent="1" foregroundColor="grey" font="Regular; 20">
+    <widget source="session.Event_Now" render="Label" position="20,173" size="490,240" transparent="1" backgroundColor="background" foregroundColor="grey" font="Regular; 20">
     <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -1108,11 +1108,11 @@
     </widget>
     <widget name="waitingtext" position="530,110" size="740,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="chosenletter" position="530,110" size="740,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
-    <widget name="list" position="530,105" size="740,560" scrollbarMode="showOnDemand" itemHeights="75,53,28" fontSizesOriginal="21,20,18" fontSizesCompact="21,18" fontSizesMinimal="21,20" />
-    <widget source="Service" render="Label" position="20,394" size="490,46" foregroundColor="secondFG" font="Regular;19" halign="left"  transparent="1">
+    <widget name="list" position="530,105" size="740,560" scrollbarMode="showOnDemand" backgroundColor="background" itemHeights="75,53,28" fontSizesOriginal="21,20,18" fontSizesCompact="21,18" fontSizesMinimal="21,20" />
+    <widget source="Service" render="Label" position="20,394" size="490,46" backgroundColor="background" foregroundColor="secondFG" font="Regular;19" halign="left"  transparent="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="20,444" size="490,182" font="Regular;20" foregroundColor="grey" valign="center">
+    <widget source="Service" render="Label" position="20,444" size="490,184" font="Regular;20" backgroundColor="background" foregroundColor="grey" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="45,366" size="80,24" foregroundColor="white" font="Regular;20" halign="left" transparent="1">
