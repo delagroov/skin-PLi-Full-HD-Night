@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.32 -->
+  <!-- PLi-Full-HD-Night vs.33 -->
   
   <!-- Head -->
 
@@ -142,8 +142,9 @@
 
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
-    <widget source="session.VideoPicture" render="Pig" position="45,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="45,89" size="417,20" zPosition="1" foregroundColor="secondFG" font="Regular;19" borderColor="black" noWrap="1" valign="center" halign="center">
+    <eLabel position="44,109" size="419,245" zPosition="1" backgroundColor="selectedBG" />	
+    <widget source="session.VideoPicture" render="Pig" position="45,110" size="417,243" backgroundColor="transparent" zPosition="2" />
+    <widget source="session.CurrentService" render="Label" position="45,110" size="417,20" zPosition="5" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="#ff000000" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
