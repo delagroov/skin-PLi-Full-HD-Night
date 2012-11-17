@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.36 -->
+  <!-- PLi-Full-HD-Night vs.37 -->
   
   <!-- Head -->
 
@@ -43,7 +43,7 @@
     <color name="redtransparent" value="#084c0000"></color>
     <color name="rssviewtop" value="#00005050"></color>
     <color name="secondBG" value="#18101214"></color>
-    <color name="secondFG" value="#00fcc000"></color>
+    <color name="secondFG" value="#00F9C731"></color>
     <color name="selectedBG" value="#06303240"></color>
     <color name="selectedFG" value="#00fcc000"></color>
     <color name="transparent" value="#ff000000"></color>
@@ -54,9 +54,9 @@
     <color name="un4a00a0a" value="#04a00a0a"></color>
     <color name="uncccccc" value="#00cccccc"></color>
     <color name="white" value="#00f0f0f0"></color>
-    <color name="yellow" value="#00ffc000"></color>   
+    <color name="yellow" value="#00F9C731"></color>   
     <color name="yellowtransparent" value="#084b4b00"></color>
-	<color name="yellowsoft" value="#CCAC68"></color>
+	<color name="yellowsoft" value="#00CCAC68"></color>
   </colors>
 
   <!-- Window -->
@@ -649,7 +649,7 @@
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="20,360" size="435,42" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21" halign="left">
+    <widget source="ServiceEvent" render="Label" position="20,360" size="440,42" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21" halign="left">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="45,390" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -666,7 +666,7 @@
     <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" backgroundColor="background" foregroundColor="grey" transparent="1" font="Regular; 20">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="425,26" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21"/>
+    <widget source="ServiceEvent" render="NextEpgInfo" position="20,645" size="441,26" transparent="1" backgroundColor="background" foregroundColor="secondFG" noWrap="1" font="Regular;21"/>
   </screen>
 
   <!-- Slim Channel Selection - I still not found were this is used -->
