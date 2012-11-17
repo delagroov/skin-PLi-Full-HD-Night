@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.34 -->
+  <!-- PLi-Full-HD-Night vs.35 -->
   
   <!-- Head -->
 
@@ -1972,7 +1972,7 @@
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="590,110" size="53,53" alphatest="on" />
     <widget name="InfoPixmap" pixmap="PLi-Full-HD-Night/icons/input_info.png" position="590,110" size="53,53" alphatest="on" />
-    <widget name="list" position="45,375" size="545,200" font="Regular;22" />
+    <widget name="list" position="25,375" size="545,200" font="Regular;22" />
   </screen>
 
   <!-- MessageBoxSimple -->
