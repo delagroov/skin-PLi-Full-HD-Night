@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.41 -->
+  <!-- PLi-Full-HD-Night vs.42 -->
   
   <!-- Head -->
 
@@ -647,7 +647,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" backgroundColor="background" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" />
+    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" backgroundColor="background" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" />
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
@@ -1024,7 +1024,7 @@
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
     <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_4"/>
-    <widget name="list" scrollbarMode="showOnDemand" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" backgroundColor="background" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" foregroundColorEventSelected="#ccc040" foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#656565" serviceNumberFont="Regular;24" position="590,110" size="670,305" transparent="1">
+    <widget name="list" scrollbarMode="showOnDemand" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" serviceInfoFont="Regular;22" serviceNameFont="Regular;22" backgroundColor="background" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,110" size="670,305" transparent="1">
 	</widget>
     <widget source="session.Event_Now" render="Label" position="45,105" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
