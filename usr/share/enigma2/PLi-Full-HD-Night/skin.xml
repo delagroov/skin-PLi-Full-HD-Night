@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.42 -->
+  <!-- PLi-Full-HD-Night vs.43 -->
   
   <!-- Head -->
 
@@ -488,7 +488,7 @@
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-Full-HD-Night/infobar/ico_hbbtv_on.png" position="876,588" size="46,21" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="PLi-Full-HD-Night/infobar/ico_hbbtv_on.png" position="856,583" size="64,24" zPosition="2" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
