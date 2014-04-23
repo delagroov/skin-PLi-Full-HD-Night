@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!-- Skin: PLi-Full-HD-Night based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-Full-HD-Night by DelaGroov -->
@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.43 -->
+  <!-- PLi-Full-HD-Night vs.44 -->
   
   <!-- Head -->
 
@@ -2235,9 +2235,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonGreen"/>
+    <panel name="ButtonTemplate_2"/>
     <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <eLabel text="Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="460,684" size="220,26" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
 
