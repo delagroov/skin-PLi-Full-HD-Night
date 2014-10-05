@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.46 -->
+  <!-- PLi-Full-HD-Night vs.47 -->
   
   <!-- Head -->
 
@@ -16,7 +16,7 @@
 
   <fonts>
     <font name="Regular" filename="/usr/share/enigma2/PLi-Full-HD-Night/hdthin.ttf" scale="100"></font>
-	<font name="LCD" filename="lcd.ttf" scale="100"></font>
+    <font name="LCD" filename="lcd.ttf" scale="100"></font>
     <font name="Console" filename="tuxtxt.ttf" scale="100"></font>
     <font name="Fixed" filename="andale.ttf" scale="100"></font>
   </fonts>
@@ -25,7 +25,7 @@
 
   <colors>  
     <color name="background" value="#000D0F16"></color>
-    <color name="background2" value="#000e1018"></color>	
+    <color name="background2" value="#000e1018"></color>
     <color name="black" value="#00000000"></color>
     <color name="blue" value="#00879ce1"></color>
     <color name="bluetransparent" value="#08001e4b"></color>
@@ -122,7 +122,7 @@
   </screen>
 
   <screen name="TopTemplate">
-    <eLabel position="0,0" size="1280,88" backgroundColor="background" />
+    <eLabel position="0,0" size="1280,88" backgroundColor="background"/>
     <ePixmap pixmap="PLi-Full-HD-Night/border/smallshadowline.png" position="0,85" size="1280,2" zPosition="2"/>
     <widget source="Title" render="Label" position="85,30" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1100,24" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
@@ -144,8 +144,8 @@
 
   <screen name="SelectionTemplate">
     <panel name="BasicTemplate"/>
-    <eLabel position="24,97" size="442,250" zPosition="1" backgroundColor="selectedBG" />	
-    <widget source="session.VideoPicture" render="Pig" position="25,98" size="440,248" backgroundColor="transparent" zPosition="2" />
+    <eLabel position="19,89" size="472,267" zPosition="1" backgroundColor="selectedBG" />
+    <widget source="session.VideoPicture" render="Pig" position="20,90" size="470,265" backgroundColor="transparent" zPosition="2" />
     <widget source="session.CurrentService" render="Label" position="25,98" size="440,20" zPosition="3" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="#ff000000" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -647,7 +647,7 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget name="list" position="530,105" size="740,560" itemHeight="28" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorServiceDescription="yellowsoft" backgroundColor="background" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" />
+    <widget name="list" position="530,105" size="740,560" itemHeight="28" picServiceEventProgressbar="PLi-Full-HD-Night/window/progress.png" progressbarBorderWidth="1" progressbarHeight="10" colorServiceDescription="yellowsoft" backgroundColor="background" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" />
     <widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
       <convert type="ServiceOrbitalPosition"/>
     </widget>
@@ -3937,29 +3937,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="590,635" size="610,50" scrollbarMode="showOnDemand" backgroundColor="#20000000" zPosition="1"/>
     <widget source="introduction" render="Label" position="590,685" size="610,23" zPosition="1" font="Regular;20" halign="center" transparent="1" />
   </screen>
-  <screen name="FullBackupConfig" position="fill" title="Make a backup or restore a backup" flags="wfNoBorder">
+  <!-- Hotkey -->
+  <screen name="HotkeySetup" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/red.png" position="145,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/green.png" position="420,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/yellow.png" position="695,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/blue.png" position="970,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="110,684" size="35,25" />
-    <widget name="key_red" position="185,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <widget name="key_green" position="460,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <widget name="key_yellow" position="735,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <widget name="key_blue" position="1010,682" size="220,28" backgroundColor="background" zPosition="1" transparent="1" font="Regular;24" halign="left" />
-    <widget name="config" position="530,90" size="630,230" scrollbarMode="showOnDemand" />
-    <widget name="status" position="20,370" size="630,140" zPosition="1" font="Regular;16" />
-  </screen>
-  <screen name="FlashImageConfig" position="fill" title="Flash or Restore a backup" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/red.png" position="145,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/green.png" position="420,682" size="26,26" alphatest="on" />
-    <ePixmap pixmap="PLi-Full-HD-Night/buttons/yellow.png" position="695,682" size="26,26" alphatest="on" />
-    <widget source="key_red" render="Label" position="185,682" size="220,28"  transparent="1" font="Regular;24" halign="left" />
-    <widget source="key_green" render="Label" position="460,682" size="220,28" transparent="1" font="Regular;24" halign="left" />
-    <widget source="key_yellow" render="Label" position="735,682" size="220,28" transparent="1" font="Regular;24" halign="left" />
-    <widget source="curdir" render="Label" position="20,370" size="430,140" transparent="1" font="Regular;18" />
-    <widget name="filelist" position="530,105" size="630,560" scrollbarMode="showOnDemand" />
+    <panel name="ButtonTemplate_2"/>
+    <widget name="list" position="530,110" size="740,500" scrollbarMode="showOnDemand"/>
+    <widget name="choosen" position="25,350" size="300,250" scrollbarMode="showOnDemand"/>
   </screen>
 </skin>
