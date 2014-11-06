@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.51 -->
+  <!-- PLi-Full-HD-Night vs.52 -->
   
   <!-- Head -->
 
@@ -968,11 +968,11 @@
 
   <!-- Softcam Setup -->
 
-  <screen name="ScSelection" position="fill" flags="wfNoBorder">
+  <screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
-    <eLabel text="Softcam Setup" position="15,25" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" valign="center" halign="left" />
-    <widget name="entries" position="530,110" size="740,525" scrollbarMode="showOnDemand"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="config" position="530,110" size="740,100" scrollbarMode="showOnDemand"/>
+    <widget name="info" position="530,210" size="740,425" foregroundColor="grey" font="Regular;20"/>
   </screen>
 
   <!-- ChoiceBox -->
