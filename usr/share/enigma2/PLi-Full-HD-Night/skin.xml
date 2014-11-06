@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.49 -->
+  <!-- PLi-Full-HD-Night vs.50 -->
   
   <!-- Head -->
 
@@ -135,7 +135,7 @@
   <screen name="TopTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="background"/>
     <ePixmap pixmap="PLi-Full-HD-Night/border/smallshadowline.png" position="0,78" size="1280,2" zPosition="2"/>
-    <widget source="Title" render="Label" position="85,25" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="Title" render="Label" position="15,25" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="1100,10" size="150,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" valign="center" halign="right">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
@@ -173,7 +173,7 @@
 
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
-    <widget source="title" render="Label" position="85,25" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
+    <widget source="title" render="Label" position="15,25" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
     <widget source="menu" render="Listbox" position="590,105" size="680,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (45,9),size = (635,30),flags = RT_HALIGN_LEFT,text = 0) ],
