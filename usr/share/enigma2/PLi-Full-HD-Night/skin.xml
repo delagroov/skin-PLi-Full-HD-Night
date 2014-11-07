@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.53 -->
+  <!-- PLi-Full-HD-Night vs.54 -->
   
   <!-- Head -->
 
@@ -1110,13 +1110,13 @@
     <panel name="SelectionTemplate"/>
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuInfoTemplate"/>
-    <widget source="session.CurrentService" render="PositionGauge" position="25,348" size="440,12" transparent="1" zPosition="4" pointer="PLi-Full-HD-Night/dvr/position_pointer1.png:417,0">
+    <widget source="session.CurrentService" render="PositionGauge" position="15,348" size="477,12" transparent="1" zPosition="4" pointer="PLi-Full-HD-Night/dvr/position_pointer1.png:477,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="25,328" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="15,328" size="90,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="white" borderWidth="1" font="Regular;18" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="348,328" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="375,328" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="white" borderWidth="1" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <widget name="waitingtext" position="530,110" size="740,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
