@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.55 -->
+  <!-- PLi-Full-HD-Night vs.56 -->
   
   <!-- Head -->
 
@@ -24,7 +24,7 @@
   <!-- Colors -->
 
   <colors>  
-    <color name="background" value="#000D0F16"></color>
+    <color name="background" value="#00070911"></color>
     <color name="background2" value="#000e1018"></color>
     <color name="black" value="#00000000"></color>
     <color name="blue" value="#00879ce1"></color>
@@ -174,7 +174,7 @@
   <screen name="MenuTemplate">
     <panel name="PigTemplate"/>
     <widget source="title" render="Label" position="15,25" size="1085,55" backgroundColor="background" transparent="1" zPosition="1" font="Regular;26" valign="center" halign="left" />
-    <widget source="menu" render="Listbox" position="590,100" size="680,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="590,100" size="680,540" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
       <convert type="TemplatedMultiContent">
         {"template": [ MultiContentEntryText(pos = (45,9),size = (635,30),flags = RT_HALIGN_LEFT,text = 0) ],
 	  "fonts": [gFont("Regular",24)],
@@ -1904,7 +1904,7 @@
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_4"/>
 	<widget name="label_disk" position="530,100" font="Regular;20" halign="center" size="740,25" valign="center" />
-	<widget source="menu" render="Listbox" position="530,100" size="740,560" scrollbarMode="showOnDemand">
+	<widget source="menu" render="Listbox" position="530,125" size="740,560" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
@@ -2260,7 +2260,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="CommitInfo" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <eLabel text="Latest Commits" position="15,25" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;26" valign="center"/>
-    <widget name="AboutScrollLabel" font="Regular;22" position="530,100" size="740,545" zPosition="2"/>
+    <widget name="AboutScrollLabel" font="Regular;20" position="520,100" size="750,565" zPosition="2"/>
   </screen>
 
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
@@ -3044,11 +3044,27 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>  
 
   <!-- EPG Import -->
+  
+   <screen name="EPGImportConfig" position="fill" title="EPG Import Configuration" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_4"/>   
+    <panel name="KeyInfoTemplate"/>
+    <widget name="config" position="520,100" size="750,400" scrollbarMode="showOnDemand" />
+    <widget name="statusbar" position="590,600" size="470,20" font="Regular;18" />
+    <widget name="status" position="590,520" size="540,60" font="Regular;20" />
+  </screen>
 
   <screen name="EPGImportSources" position="fill" title="EPG Import Sources" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
     <widget name="list" position="530,100" size="740,560" itemHeight="28" scrollbarMode="showOnDemand" />
+  </screen>
+  
+  <screen name="EPGImportLog" position="fill" title="EPG Import Log" flags="wfNoBorder">
+    <panel name="PigTemplate"/>
+    <panel name="ButtonTemplate_1"/>
+    <panel name="ButtonTemplate_4"/>
+    <widget name="list" position="520,100" font="Regular;20" size="750,565" scrollbarMode="showOnDemand" />
   </screen>
 
   <!--<screen name="Config" position="fill" title="Configuration" flags="wfNoBorder"> Waiting for a better solution!!! so comment out 
@@ -3972,7 +3988,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="WhatisNewInfo" position="fill" title="" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_1"/>
-    <widget name="AboutScrollLabel" font="Regular;20" position="520,125" size="750,500" zPosition="2" halign="left" />
+    <widget name="AboutScrollLabel" font="Regular;20" position="520,100" size="750,565" zPosition="2" halign="left" />
   </screen>
   <screen name="FlashImageConfig" position="fill" title="" flags="wfNoBorder">
     <panel name="PigTemplate"/>
