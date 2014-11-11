@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.56 -->
+  <!-- PLi-Full-HD-Night vs.57 -->
   
   <!-- Head -->
 
@@ -811,42 +811,42 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
+    <widget source="Event" render="Label" position="520,90" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="Event" render="Label" position="610,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="right" valign="top">
+    <widget source="Event" render="Label" position="610,90" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="right" valign="top">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Event" render="Label" position="690,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="left" valign="top">
+    <widget source="Event" render="Label" position="690,90" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="left" valign="top">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="780,110" size="380,24" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;20" valign="top">
+    <widget source="Event" render="Label" position="780,90" size="380,24" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;20" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="PLi-Full-HD-Night/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
+    <widget source="Event" render="Progress" pixmap="PLi-Full-HD-Night/infobar/pbar.png" position="520,115" size="745,8" transparent="1" borderWidth="2" borderColor="#33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,145" size="710,185" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
+    <widget source="Event" render="Label" position="520,130" size="745,210" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,335" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
+    <!--<widget source="Event" render="Label" position="520,330" size="610,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
       <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="Event" render="Label" position="1030,335" size="200,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
+    <widget source="Event" render="Label" position="1030,330" size="200,20" foregroundColor="blue" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
       <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,380" size="1180,295" itemHeight="45" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline1" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline2" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline3" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline4" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline5" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline_now" pixmap="PLi-Full-HD-Night/window/timeline-now.png" position="4,377" size="19,298" zPosition="2" alphatest="on" />
+    </widget>-->
+    <widget name="timeline_text" position="15,355" size="1250,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="15,380" size="1250,295" itemHeight="45" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline0" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,377" size="1,295" zPosition="1" />
+    <widget name="timeline_now" pixmap="PLi-Full-HD-Night/window/timeline-now.png" position="4,377" size="19,295" zPosition="2" alphatest="on" />
   </screen>
 
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="fill" flags="wfNoBorder">
@@ -854,15 +854,15 @@
     <panel name="ButtonTemplate_4"/>
     <panel name="KeyMenuTemplate"/>
     <panel name="KeyInfoTemplate"/>
-    <widget name="timeline_text" position="50,110" size="1180,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="50,140" size="1180,490" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline1" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline2" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline3" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline4" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline5" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,496" zPosition="1" />
-    <widget name="timeline_now" pixmap="PLi-Full-HD-Night/window/timeline-now.png" position="4,137" size="19,496" zPosition="2" alphatest="on" />
+    <widget name="timeline_text" position="15,110" size="1250,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="15,140" size="1250,490" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
+    <widget name="timeline0" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline1" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline2" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline3" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline4" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline5" pixmap="PLi-Full-HD-Night/window/timeline.png" position="0,137" size="1,490" zPosition="1" />
+    <widget name="timeline_now" pixmap="PLi-Full-HD-Night/window/timeline-now.png" position="4,137" size="19,490" zPosition="2" alphatest="on" />
   </screen>
 
   <screen name="GraphMultiEpgSetup" position="fill" title="Electronic Program Guide Setup" flags="wfNoBorder">
