@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.58 -->
+  <!-- PLi-Full-HD-Night vs.59 -->
   
   <!-- Head -->
 
@@ -815,7 +815,7 @@
     <widget source="Event" render="Label" position="780,90" size="380,24" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;20" valign="top">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="PLi-Full-HD-Night/infobar/pbar.png" position="520,115" size="745,8" transparent="1" borderWidth="2" borderColor="#33333a">
+    <widget source="Event" render="Progress" pixmap="PLi-Full-HD-Night/infobar/pbar_epg.png" position="520,115" size="745,8" transparent="1" borderWidth="2" borderColor="#33333a">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="Event" render="Label" position="520,130" size="745,210" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
